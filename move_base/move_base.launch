@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="log">
+		<rosparam file="$(find play_rosbag)/move_base/config/behavior.yaml" />
+		<rosparam file="$(find play_rosbag)/move_base/config/costmap_common_params.yaml"
+			command="load" ns="global_costmap" />
+		<rosparam file="$(find play_rosbag)/move_base/config/costmap_common_params.yaml"
+			command="load" ns="local_costmap" />
+		<rosparam file="$(find play_rosbag)/move_base/config/local_costmap_params.yaml"
+			command="load" />
+		<rosparam file="$(find play_rosbag)/move_base/config/global_costmap_params.yaml"
+			command="load" />
+		<rosparam file="$(find play_rosbag)/move_base/config/global_planner_params.yaml"
+			command="load" />
+		<param name="base_global_planner" value="global_planner/GlobalPlanner" />
+		<param name="planner_frequency" value="2" />
+		<param name="planner_patience" value="3" />
+		<rosparam file="$(find play_rosbag)/move_base/config/teb_local_planner_params.yaml"
+			command="load" />
+		<param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+		<param name="controller_frequency" value="5" />
+		<param name="controller_patience" value="3" />
+	</node>
+</launch>
