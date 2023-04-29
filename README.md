@@ -4,11 +4,9 @@
 
 Активный граф во время работы выглядит так:
 
-<<<<<<< HEAD
-![graph](image/rosgraph.jpg)
-=======
-![graph](image/rosgraph.png)
->>>>>>> ff611fc58a3ac390926f91559091ebcfbc8e115c
+
+![graph](/image/rosgraph.jpg)
+
 
 Для того чтобы воспользоваться пакетом нужно:
 
