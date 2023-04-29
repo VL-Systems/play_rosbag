@@ -5,7 +5,7 @@
 Активный граф во время работы выглядит так:
 
 
-![graph](/image/rosgraph.jpg)
+![graph](https://github.com/VL-Systems/play_rosbag/blob/main/%20image/rosgraph.jpg)
 
 
 Для того чтобы воспользоваться пакетом нужно:
